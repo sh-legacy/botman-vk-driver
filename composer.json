@@ -1,0 +1,27 @@
+{
+    "name": "nikhaker/botman-vk-driver",
+    "license": "MIT",
+    "description": "Vk driver for BotMan",
+    "keywords": [
+        "Bot",
+        "BotMan",
+        "Vk",
+        "Vkontakte"
+    ],
+    "homepage": "http://github.com/nikhaker/botman-vk-driver",
+    "authors": [
+        {
+            "name": "Nik Haker",
+            "email": "nikhakerlab@mail.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "botman/botman": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BotMan\\Drivers\\Vk\\": "src/"
+        }
+    }
+}
