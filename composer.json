@@ -23,5 +23,12 @@
         "psr-4": {
             "BotMan\\Drivers\\Vk\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BotMan\\Drivers\\Vk\\Providers\\VkServiceProvider"
+            ]
+        }
     }
 }
