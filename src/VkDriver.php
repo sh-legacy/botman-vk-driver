@@ -1,6 +1,6 @@
 <?php
 
-namespace Botman\Drivers\Vk;
+namespace BotMan\Drivers\Vk;
 
 use BotMan\BotMan\Drivers\Events\GenericEvent;
 use BotMan\BotMan\Drivers\HttpDriver;
