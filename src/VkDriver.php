@@ -42,7 +42,7 @@ class VkDriver extends HttpDriver
         $this->payload = new ParameterBag(json_decode($request->getContent(), true) ?? []);
         $this->event = Collection::make($this->payload->all());
         $this->config = Collection::make($this->config->get('vk', []));
-        if ($this->matchesRequest() || $this->hasMatchingEvent()) {
+        if (($this->matchesRequest() || $this->hasMatchingEvent()) && $this->event->get('type') != 'confirmation') {
             $this->respondApiServer();
         }
     }
